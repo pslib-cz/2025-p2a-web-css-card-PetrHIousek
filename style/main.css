@@ -25,10 +25,38 @@
         max-width: 21em;
         margin: 1rem; /* without scaling */
         padding: 1em;
+        border: 0.2em solid var(--text);
+
     }
 }
-
 @layer components {
     /* todo components */
- 
+    .cards__nadpis {
+        font-size: 2em;
+        color: var(--secondary)
+    }
+
+    .cards__popis {
+        font-size: 1em;
+
+    }
+
+    .cards__popisky--ano {
+        list-style-image: url("../images/check.svg");
+        padding-left: 0em;
+    }
+    .cards__popisky--ne {
+        list-style-image: url("../images/cross.svg");
+    }
+    .cards__popisky {
+        padding-left: 1.5em;
+    }
+    .cards__text--barva {
+        color: var(--primary);
+    }
+    .cards__tlacudlo {
+        background-color: var(--primary);
+        color: white;
+        text-align: center;
+    }
 }
