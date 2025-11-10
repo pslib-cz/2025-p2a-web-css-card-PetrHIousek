@@ -19,13 +19,14 @@
 @layer base {
     html {
         font-family: 'Inter', sans-serif;
-        color: var(--text);
+        color: var(--text)
     }
     .card {
         max-width: 21em;
         margin: 1rem; /* without scaling */
         padding: 1em;
-        border: 0.2em solid var(--text);
+        border: 0.1em solid var(--text);
+        border-radius: 1rem;
 
     }
 }
@@ -33,24 +34,27 @@
     /* todo components */
     .cards__nadpis {
         font-size: 2em;
-        color: var(--secondary)
+        color: var(--secondary);
+        margin: 0.5em;
+        margin-left: 0.2em;
     }
 
     .cards__popis {
         font-size: 1em;
+        margin: 0.5em;
 
     }
 
     .cards__popisky--ano {
         list-style-image: url("../images/check.svg");
-        padding-left: 0em;
+        padding-top: 1em;
+
     }
     .cards__popisky--ne {
         list-style-image: url("../images/cross.svg");
+        padding-top: 1em;
     }
-    .cards__popisky {
-        padding-left: 1.5em;
-    }
+
     .cards__text--barva {
         color: var(--primary);
     }
@@ -58,5 +62,30 @@
         background-color: var(--primary);
         color: white;
         text-align: center;
+        text-decoration: none;
+        border: none;
+        padding: 1em 5em;
+        display: inline-block;
+        border-radius: 6px;
+        margin-left: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    
+    .cards__200 {
+        font-size: 1.5em;
+    }
+
+    .cards__mesicnicena {
+        font-size: 0.8em;
+        margin-left: 0.5em;
+    }
+
+    .cards__popisky {
+        padding-bottom: 1em;
+    }
+
+    .cards__cena  {
+        margin-left: 0.5em;
     }
 }
