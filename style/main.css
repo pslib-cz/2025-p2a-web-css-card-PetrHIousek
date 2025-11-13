@@ -6,6 +6,7 @@
 @layer reset {
     :root {
         --primary: #07755D;
+        --primary2: #0EB17C;
         --secondary: #59bc1c;
         --denied: #ff8686;
         --text: #515959;
@@ -88,4 +89,89 @@
     .cards__cena  {
         margin-left: 0.5em;
     }
+
+
+
+
+
+    .card--standard {
+    border: 0.1em solid var(--border);
+    border-radius: 1rem;
+    padding-bottom: 5em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.card__standardtext {
+    text-align: center;
+    font-size: 2em;
+    color: var(--primary2);
+    margin: 0.5em;
+ }
+ .card__nadpis--popisek{
+    text-align: center;
+    font-size: 0.9em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2.5em;
+ }
+ .card__hotdeal {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+    margin-top: 0;
+    font-size: 0.8em;
+    
+ }
+.card__greenbox {
+    background-color: var(--primary2);
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+ .card__only {
+    font-size: 0.7em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+ }
+ .card__cena {
+    font-size: 3em;
+    margin: 0;
+ }
+ .card__sipka {
+    list-style-type: "→";
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+ }
+ li::marker {
+    color:var(--primary2);
+ }
+ .card__popisky {
+    padding: 1em;
+ }
+ .card__tlacitko {
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--primary2);
+    padding: 1em 6.94em;
+    color: white;
+    border-radius: 1em;
+    display: inline-block;
+ }
+ .card__footer {
+    margin-left: 1em;
+    margin-right: 1em;
+ }
+ /* Ptal jsem se clankera, jak odebrat tu poslední linii */
+ li:last-child {
+    border-bottom: none;
+ }
+ .card__hotdealbox {
+    text-align: right;
+ }
 }
